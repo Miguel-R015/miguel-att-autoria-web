@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Biografia</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: darkred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            height: 600px;
+        }
+
+
+        .esquerda {
+            flex: 2;
+            border: 3px solid brown;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: white;
+        }
+
+
+        .direita {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .box {
+            flex: 1;
+            border: 3px solid brown;
+            border-radius: 15px;
+            background-color: white;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .texto-principal {
+            font-size: 18px;
+            color: darkslategray;
+            text-align: justify;
+        }
+
+        .texto-secundario {
+            font-size: 18px;
+            color: purple;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+
+        a {
+            color: green;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        img {
+            border: 4px solid brown;
+            border-radius: 15px;
+            width: 250px;
+            max-width: 100%;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: darkred;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Vida</h1>
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+
+            <section class="esquerda">
+
+                <h2>Sobre mim</h2>
+
+                <p class="texto-principal">
+                    <b>
+                        Sendo bem sincero, a minha vida não tem absolutamente nada demais.
+                        Sou alguém comum, ou ao menos acho que sou. No fim, o conceito de
+                        "comum" é muito relativo, assim como a maioria das coisas no mundo.
+                        Eu estudo no IFRN de Parnamirim, sou alguém que possui ambições,
+                        assim como todo ser humano. No momento, não sei exatamente o que
+                        quero fazer. Acho que vou para uma universidade federal e cursar
+                        algo relacionado à informática. Costumo sentir tédio com bastante
+                        frequência, mas estou tentando mudar isso.
+                    </b>
+                </p>
+
+                <p class="texto-secundario">
+                    <i>
+                        Agora vamos à parte interessante: eu gosto de matemática, escutar
+                        música e também assistir séries, animes e filmes. Obviamente,
+                        também amo dormir. No geral, sou uma pessoa bastante preguiçosa.
+                    </i>
+                </p>
+
+            </section>
+
+
+
+            <section class="direita">
+
+                <div class="box">
+
+                    <h2>Meu site favorito</h2>
+
+                    <a href="https://www.google.com">
+                        Meu site favorito
+                    </a>
+
+                </div>
+
+                <div class="box">
+
+                    <h2>Uma imagem que eu gosto</h2>
+
+                    <figure>
+
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg"
+                            alt="Mona Lisa">
+
+                        <figcaption>
+                            Mona Lisa
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>Minha Biografia - 2026</p>
+    </footer>
+
+</body>
+
+</html>
